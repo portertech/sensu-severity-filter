@@ -5,6 +5,9 @@ The Sensu Go Severity Filter is a [Sensu Event Filter][1] that
 filters Sensu Go Events by Check status severity (ok, warning,
 critical, unknown).
 
+This Filter Asset implements the [Sensu 1.x built-in Handler
+severities filter logic][2].
+
 ## Configuration
 
 ### Configure filter definitions
@@ -30,3 +33,4 @@ spec:
 ```
 
 [1]: https://docs.sensu.io/sensu-go/5.13/reference/filters/#how-do-sensu-filters-work
+[2]: https://github.com/sensu/sensu/blob/468698124bcbadebea6e7d89c3e88a048c1b85f9/lib/sensu/server/filter.rb#L36-L65
