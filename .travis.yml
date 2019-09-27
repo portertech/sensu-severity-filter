@@ -2,20 +2,23 @@ dist: trusty
 addons:
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
+    - google-chrome-stable
 language: node_js
 node_js:
-  - "12"
+- '12'
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 deploy:
-  - provider: script
-    script: bin/build.sh
-    skip_cleanup: true
-    on:
-      tags: true
-      branch: master
+- provider: script
+  script: bin/build.sh
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
+env:
+  global:
+    secure: nm8zcqRXErpFTZgOUgwkJajEw93jgJ5yzGOa6oL/fHBR06OJ1ut+vs1Jmx7Rgc23zqNxUS+5s/ZFaVRUDjynPcwfd7jcyWxqFMQhcNp5imAf3ryrgoGErXmMTPl+jXmnSDNeXJyyJv+4Dkh5Bi/z0qhDgw6NpP3H/7e+pi5Dq6FLOlvamoq69nuqKHSQChDx6HMwKPeDBs3tjSskK2SfnN+a+R0m6f3nokhS1K1ytaPCKFjY9rFIpTeRZT+ef+HfttoBBAoH1A9x3jtKvFkW+DruvdWcELb67ZP+izow8zZ4+dpJ4eliRG/0kcIFs3k38ihPxLN5qTtOG4A+4Oyo5J1woY0YcUwN464I4X5JN3nKztXDWJOqMvoH7vtVKdePBUEm3/o9RwQc7DXXgDUKuBJ1G6VexV3g1BrOrrM7q19cOyOl2TNGsZTwOA7iP7/Fre4cZLaxuu79LM1/KmQYkScbZWdfBo0AzjzgSd8ZfptR6fPEGXUwns0xXOqQcLZBjsxjMSNkHEWirxs6fx92UAQ/FEjGXgIMaAluIH6k+whkX0Kw+4V+Wqxh0OOREomsSGdEL+fdIb04yqEML38sLI7dx+6WNw5ULELCyP71KUZzxrsGs315yRlM5dQaG00h7LzZzUTtwXXfsvlId+EjpQXc8sUf6MtU34raaxp/46s=
