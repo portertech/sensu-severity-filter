@@ -13,7 +13,7 @@ severities filter logic][2].
 ### Configure filter definitions
 
 Define one or more filters with `sensu-severity-filter` as a [runtime
-asset] and using the `has_severity` function in a filter expression.
+asset][3] and using the `has_severity` function in a filter expression.
 The following example shows a filter which will allow events with a
 `critical` check severity:
 
@@ -34,3 +34,4 @@ spec:
 
 [1]: https://docs.sensu.io/sensu-go/5.13/reference/filters/#how-do-sensu-filters-work
 [2]: https://github.com/sensu/sensu/blob/468698124bcbadebea6e7d89c3e88a048c1b85f9/lib/sensu/server/filter.rb#L36-L65
+[3]: https://docs.sensu.io/sensu-go/5.13/reference/assets/#what-is-an-asset
