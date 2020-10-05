@@ -8,11 +8,11 @@ critical, unknown).
 This Filter Asset implements the [Sensu 1.x built-in Handler
 severities filter logic][2].
 
-The logic excludes events unless their check exit status matches
-the specified severity, excepting of certain "ok" severity events. 
+The severities filter logic excludes events unless their check exit status matches
+the specified severity, except for certain OK-severity events. 
 
-OK events are allowed when the available check history includes
-a match for the specified severity.
+OK-severity events are allowed when the available check history includes
+a match for the severity specified in the filter.
 
 ## Usage
 
